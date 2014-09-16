@@ -8,8 +8,8 @@ std::vector<int> twoSum (std::vector<int> &numbers, int target) {
 	std::vector<int> result;
 	for (int i = 0; i < numbers.size(); i++) {
 		if (map[ target - numbers[i] ]) {
-			result.push_back(map[ target - numbers[i] ] );
-			result.push_back(i + 1);
+			result.push_back( map[ target - numbers[i] ] );
+			result.push_back( i + 1 );
 			break;
 		} else {
 			map[ numbers[i] ] = i + 1;
